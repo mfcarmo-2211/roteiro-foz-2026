@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foz do Iguaçu — Roteiro de 5 dias</title>
+<meta property="og:title" content="Foz do Iguaçu — Viagem em família, os 70 anos da Vovó Lourdes">
+<meta property="og:description" content="28/07 a 03/08/2026 · 6 adultos + 3 crianças · Roteiro completo com dias, restaurantes, transporte e mapa.">
+<meta property="og:image" content="foz-iguacu-og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Foz do Iguaçu — Viagem em família, os 70 anos da Vovó Lourdes">
+<meta name="twitter:description" content="28/07 a 03/08/2026 · 6 adultos + 3 crianças · Roteiro completo com dias, restaurantes, transporte e mapa.">
+<meta name="twitter:image" content="foz-iguacu-og-image.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  --forest-deep:#12271F;
+  --canopy:#2C5E48;
+  --mist:#F3F1E7;
+  --terra:#A8461F;
+  --gold:#E0A339;
+  --teal:#1E7A72;
+  --ink:#1A241E;
+  --paper:#FBFAF4;
+  --line: rgba(18,39,31,0.14);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  margin:0;
+}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.72rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--terra);
+}
+a{color:inherit;}
+
+.share-banner{
+  width:100%;
+  display:block;
+  max-height:420px;
+  object-fit:cover;
+}
+nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(251,250,244,0.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:960px;
+  margin:0 auto;
+  padding:14px 24px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-logo{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:1rem;
+  margin-right:12px;
+  white-space:nowrap;
+  color:var(--forest-deep);
+}
+.nav-link{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.74rem;
+  letter-spacing:0.03em;
+  text-decoration:none;
+  color:var(--ink);
+  opacity:0.6;
+  white-space:nowrap;
+  padding:6px 10px;
+  border-radius:100px;
+  transition:opacity .15s, background .15s;
+}
+.nav-link:hover{opacity:1; background:var(--line);}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(ellipse at 20% -10%, rgba(224,163,57,0.18), transparent 55%),
+    linear-gradient(180deg, var(--forest-deep), #0D1D16);
+  color:var(--mist);
+  padding:88px 24px 64px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  right:-8%;
+  bottom:-30%;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(30,122,114,0.35), transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{max-width:760px; margin:0 auto; position:relative;}
+.hero .eyebrow{color:var(--gold);}
+.hero h1{
+  font-size:clamp(2.6rem, 7vw, 4.4rem);
+  font-style:italic;
+  font-weight:500;
+  line-height:0.98;
+  margin:14px 0 18px;
+  color:#fff;
+}
+.hero p.lede{
+  font-size:1.08rem;
+  max-width:520px;
+  color:rgba(243,241,231,0.82);
+  margin-bottom:28px;
+}
+.hero-stats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:28px;
+  margin-top:8px;
+  padding-top:24px;
+  border-top:1px solid rgba(243,241,231,0.18);
+}
+.stat .num{
+  font-family:'Fraunces',serif;
+  font-size:1.7rem;
+  color:var(--gold);
+  line-height:1;
+}
+.stat .label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:rgba(243,241,231,0.6);
+  margin-top:4px;
+}
+
+/* ---------- River rail (signature element) ---------- */
+.journey{
+  max-width:960px;
+  margin:0 auto;
+  padding:0 24px;
+  position:relative;
+}
+.river-rail{
+  position:absolute;
+  left:42px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:linear-gradient(180deg, var(--teal), var(--canopy) 40%, var(--terra) 75%, var(--gold));
+  opacity:0.35;
+}
+@media (max-width:640px){
+  .river-rail{left:22px;}
+}
+
+/* ---------- Day sections ---------- */
+.day{
+  position:relative;
+  padding:56px 0 8px 92px;
+}
+@media (max-width:640px){
+  .day{padding-left:56px;}
+}
+.day-marker{
+  position:absolute;
+  left:42px;
+  top:60px;
+  transform:translateX(-50%);
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:var(--paper);
+  border:2px solid var(--canopy);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'JetBrains Mono',monospace;
+  font-weight:500;
+  font-size:0.95rem;
+  color:var(--forest-deep);
+}
+@media (max-width:640px){
+  .day-marker{left:22px; width:36px; height:36px; font-size:0.8rem;}
+}
+.day-head{margin-bottom:22px;}
+.day-head .eyebrow{margin-bottom:6px;}
+.day-head h2{font-size:1.9rem; color:var(--forest-deep);}
+.day-head .sub{
+  color:rgba(26,36,30,0.62);
+  font-size:0.98rem;
+  margin-top:6px;
+  max-width:60ch;
+}
+.effort{
+  display:inline-block;
+  margin-top:12px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.68rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:100px;
+  background:rgba(44,94,72,0.1);
+  color:var(--canopy);
+}
+
+.timeline{
+  border-left:1px solid var(--line);
+  padding-left:24px;
+  margin:0 0 20px;
+}
+.slot{
+  padding-bottom:22px;
+  position:relative;
+}
+.slot::before{
+  content:"";
+  position:absolute;
+  left:-29px;
+  top:6px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--terra);
+}
+.slot .time{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.72rem;
+  letter-spacing:0.04em;
+  color:var(--terra);
+  text-transform:uppercase;
+  display:block;
+  margin-bottom:4px;
+}
+.slot .what{font-size:0.98rem; max-width:64ch;}
+.slot .what strong{color:var(--forest-deep); font-weight:600;}
+a.inline-map{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.66rem;
+  color:var(--teal);
+  text-decoration:none;
+  margin-left:5px;
+  white-space:nowrap;
+}
+a.inline-map:hover{text-decoration:underline;}
+.dish .body a.inline-map{color:var(--gold);}
+
+.note{
+  background:#EFEADA;
+  border-left:3px solid var(--gold);
+  padding:12px 16px;
+  border-radius:0 6px 6px 0;
+  font-size:0.88rem;
+  color:rgba(26,36,30,0.85);
+  margin:14px 0;
+  max-width:66ch;
+}
+.note::before{
+  content:"Nota de campo — ";
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.66rem;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  color:var(--terra);
+  display:block;
+  margin-bottom:4px;
+}
+
+.dish{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  background:var(--forest-deep);
+  color:var(--mist);
+  border-radius:10px;
+  padding:16px 18px;
+  margin:18px 0 8px;
+  max-width:66ch;
+}
+.dish .tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.62rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--gold);
+  white-space:nowrap;
+  padding-top:3px;
+}
+.dish .body b{font-family:'Fraunces',serif; font-weight:600; font-size:1.02rem; display:block; margin-bottom:2px;}
+.dish .body span{font-size:0.86rem; color:rgba(243,241,231,0.78);}
+
+hr.div{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:0 0 0 92px;
+}
+@media (max-width:640px){hr.div{margin-left:56px;}}
+
+/* ---------- Section blocks (transport, restaurants, tips) ---------- */
+.block{
+  max-width:960px;
+  margin:0 auto;
+  padding:64px 24px;
+}
+.block-head{max-width:60ch; margin-bottom:32px;}
+.block-head h2{font-size:2rem; color:var(--forest-deep);}
+.block-head p{color:rgba(26,36,30,0.65); margin-top:8px;}
+
+.transport-grid{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:20px;
+}
+@media (max-width:760px){.transport-grid{grid-template-columns:1fr;}}
+.transport-card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:24px;
+  background:var(--mist);
+}
+.transport-card.recommended{
+  background:var(--canopy);
+  color:var(--mist);
+  border-color:var(--canopy);
+}
+.transport-card h3{font-size:1.1rem; margin-bottom:12px;}
+.transport-card.recommended h3{color:#fff;}
+.transport-card ul{margin:0; padding-left:18px; font-size:0.92rem;}
+.transport-card li{margin-bottom:9px;}
+.pill{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.64rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:3px 9px;
+  border-radius:100px;
+  background:rgba(255,255,255,0.16);
+  margin-bottom:12px;
+}
+.transport-card:not(.recommended) .pill{background:rgba(168,70,31,0.12); color:var(--terra);}
+
+.exception{
+  margin-top:20px;
+  padding:16px 18px;
+  border:1px dashed var(--line);
+  border-radius:10px;
+  font-size:0.9rem;
+  color:rgba(26,36,30,0.75);
+}
+
+.restaurants{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(220px,1fr));
+  gap:14px;
+}
+.rcard{
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:18px;
+  background:var(--paper);
+}
+.rcard .eyebrow{margin-bottom:8px;}
+.rcard h3{font-size:1.05rem; margin-bottom:6px;}
+.rcard p{font-size:0.86rem; color:rgba(26,36,30,0.65); margin:0;}
+
+.map-wrap{
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  margin-bottom:28px;
+}
+.map-wrap iframe{
+  width:100%;
+  height:380px;
+  border:0;
+  display:block;
+}
+.map-caption{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.74rem;
+  color:rgba(26,36,30,0.6);
+  margin:-18px 0 28px;
+}
+
+.datatable-wrap{
+  overflow-x:auto;
+  margin-bottom:36px;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+table.datatable{
+  width:100%;
+  border-collapse:collapse;
+  font-size:0.88rem;
+  min-width:560px;
+}
+table.datatable caption{
+  text-align:left;
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:1.1rem;
+  color:var(--forest-deep);
+  padding:16px 18px 10px;
+}
+table.datatable th{
+  text-align:left;
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.68rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--terra);
+  padding:10px 18px;
+  border-bottom:1px solid var(--line);
+  background:rgba(44,94,72,0.05);
+}
+table.datatable td{
+  padding:12px 18px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+table.datatable tr:last-child td{border-bottom:none;}
+table.datatable td.name{font-weight:600; color:var(--forest-deep); white-space:nowrap;}
+table.datatable td.phone{font-family:'JetBrains Mono',monospace; font-size:0.82rem; white-space:nowrap;}
+table.datatable a.maplink{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.72rem;
+  color:var(--teal);
+  text-decoration:none;
+  white-space:nowrap;
+}
+table.datatable a.maplink:hover{text-decoration:underline;}
+.tips-list li{
+  display:flex;
+  gap:14px;
+  padding:16px 0;
+  border-top:1px solid var(--line);
+  font-size:0.94rem;
+}
+.tips-list li:first-child{border-top:none;}
+.tips-list b{font-family:'Fraunces',serif; font-weight:600; color:var(--forest-deep); white-space:nowrap;}
+
+footer{
+  background:var(--forest-deep);
+  color:rgba(243,241,231,0.7);
+  text-align:center;
+  padding:40px 24px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.78rem;
+  letter-spacing:0.04em;
+}
+footer span{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<img class="share-banner" src="foz-iguacu-og-image.png" alt="Foz do Iguaçu — Viagem em família, comemorando os 70 anos da Vovó Lourdes, 28/07 a 03/08/2026">
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">Foz · Roteiro</span>
+    <a class="nav-link" href="#dia1">Dia 1</a>
+    <a class="nav-link" href="#dia2">Dia 2</a>
+    <a class="nav-link" href="#dia3">Dia 3</a>
+    <a class="nav-link" href="#dia4">Dia 4</a>
+    <a class="nav-link" href="#dia5">Dia 5</a>
+    <a class="nav-link" href="#dia6">Dia 6</a>
+    <a class="nav-link" href="#embarque">Embarque</a>
+    <a class="nav-link" href="#transporte">Transporte</a>
+    <a class="nav-link" href="#restaurantes">Restaurantes</a>
+    <a class="nav-link" href="#dados">Mapa e contatos</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Roteiro de viagem · Tríplice fronteira</div>
+    <h1>Foz do Iguaçu</h1>
+    <p class="lede">28/07 a 03/08/2026 — seis dias de cataratas, mata, aves e um pouco de agito, pensados para um grupo de três gerações se divertir no mesmo ritmo.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">6</div><div class="label">Dias cheios</div></div>
+      <div class="stat"><div class="num">9</div><div class="label">Pessoas</div></div>
+      <div class="stat"><div class="num">2–70</div><div class="label">Idades</div></div>
+      <div class="stat"><div class="num">Airbnb</div><div class="label">Hospedagem</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="journey">
+  <div class="river-rail"></div>
+
+  <section class="day" id="dia1">
+    <div class="day-marker">01</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 1 · Terça, 28/07</div>
+      <h2>Chegada e ambientação</h2>
+      <p class="sub">Pouso 9h20, primeira imersão no clima da tríplice fronteira e um pôr do sol para começar bem.</p>
+      <span class="effort">Ritmo leve/moderado</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">9h20</span>
+        <p class="what">Chegada ao aeroporto de Foz. Traslado até o <strong>Airbnb</strong> <a class="inline-map" href="https://maps.google.com/?cid=13100694403065089261" target="_blank" rel="noopener">↗ mapa</a> (R. das Papoulas, 764), check-in e acomodação das malas — com o pouso pela manhã, sobra bastante dia útil.</p>
+      </div>
+      <div class="slot">
+        <span class="time">12h30</span>
+        <p class="what">Almoço tranquilo perto do Airbnb e uma horinha de descanso/piscina para as crianças soltarem a energia da viagem.</p>
+      </div>
+      <div class="slot">
+        <span class="time">15h</span>
+        <p class="what"><strong>Templo Budista Chen Tien</strong> <a class="inline-map" href="https://maps.google.com/?cid=956689821290316279" target="_blank" rel="noopener">↗ mapa</a> — jardins, estátuas e vista panorâmica da cidade e de Ciudad del Este. Entrada gratuita, visita de ~1h, tirem os sapatos para entrar no templo.</p>
+      </div>
+      <div class="slot">
+        <span class="time">16h30</span>
+        <p class="what"><strong>Marco das Três Fronteiras</strong> <a class="inline-map" href="https://maps.google.com/?cid=7055091654915134417" target="_blank" rel="noopener">↗ mapa</a> — mirante onde se vê Brasil, Argentina e Paraguai ao mesmo tempo. Passeio curto (30–40 min), acessível para carrinho de bebê, ótimo para o pôr do sol.</p>
+      </div>
+    </div>
+
+    <div class="note">O Templo Budista funciona de terça a domingo, 9h30–16h30 (fechado no primeiro domingo do mês) — confirme se bate com o dia da chegada. O Marco tem show cultural à noite, mas costuma esticar; avaliem se vale para a primeira noite ou se é melhor guardar energia.</div>
+
+    <div class="dish">
+      <span class="tag">Jantar</span>
+      <div class="body">
+        <b>Rafain Churrascaria Show <a class="inline-map" href="https://maps.google.com/?cid=11798655624795543583" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Buffet variado (saladas, japonesa, massas, churrasco) que agrada todo mundo, com show folclórico incluso. Bom para quebrar o gelo da viagem.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="dia2">
+    <div class="day-marker">02</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 2 · Quarta, 29/07</div>
+      <h2>Cataratas do Iguaçu (lado brasileiro)</h2>
+      <p class="sub">O grande dia do roteiro. O parque abre 9h (8h30 fim de semana) — chegar no primeiro horário evita calor, fila e multidão na Garganta do Diabo.</p>
+      <span class="effort">Ritmo moderado / animado</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">8h</span>
+        <p class="what">Saída do Airbnb.</p>
+      </div>
+      <div class="slot">
+        <span class="time">8h30–9h</span>
+        <p class="what">Entrada no <strong>Parque Nacional do Iguaçu</strong> <a class="inline-map" href="https://maps.google.com/?cid=7954268245284137615" target="_blank" rel="noopener">↗ mapa</a>.</p>
+      </div>
+      <div class="slot">
+        <span class="time">9h–12h</span>
+        <p class="what">Trilha das Cataratas — cerca de 1,2 km, plana e pavimentada, com ônibus panorâmico interno incluso no ingresso. Elevador disponível para quem tiver dificuldade de mobilidade. Ritmo tranquilo, parem quantas vezes quiserem.</p>
+      </div>
+      <div class="slot">
+        <span class="time">12h–13h30</span>
+        <p class="what">Almoço dentro do próprio parque (ver abaixo) — evita deslocamento extra logo após a trilha.</p>
+      </div>
+      <div class="slot">
+        <span class="time">Tarde</span>
+        <p class="what"><strong>Vale dos Dinossauros</strong> <a class="inline-map" href="https://maps.google.com/?cid=176960266214406754" target="_blank" rel="noopener">↗ mapa</a> (complexo Dreams Park Show) — trilha entre florestas e lagos com 30 dinossauros animatrônicos em tamanho real, som e movimento incluídos. Funciona até 22h, dá pra ir com calma no fim da tarde. Arvorismo e tirolesa são opcionais e à parte.</p>
+      </div>
+    </div>
+
+    <div class="note">Crianças de até 6 anos não pagam ingresso das Cataratas. Levem capa de chuva leve — a Garganta do Diabo respinga bastante. A tirolesa do Vale dos Dinossauros exige altura mínima de 1,20m, peso máximo de 95kg e idade máxima de 70 anos — nem todo mundo vai poder encarar, mas a trilha principal é livre para qualquer idade.</div>
+
+    <div class="dish">
+      <span class="tag">Almoço</span>
+      <div class="body">
+        <b>Porto Canoas <a class="inline-map" href="https://maps.google.com/?cid=285590153135566281" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Restaurante dentro do Parque Nacional do Iguaçu, com vista para o rio.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="dia3">
+    <div class="day-marker">03</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 3 · Quinta, 30/07</div>
+      <h2>Parque das Aves + Wonder Park</h2>
+      <p class="sub">Trilhas planas e sombreadas de manhã, diversão à tarde — um dos combos mais queridos por criança e adulto.</p>
+      <span class="effort">Ritmo moderado / animado</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">8h30</span>
+        <p class="what">Saída do Airbnb — o parque fica a poucos minutos das Cataratas.</p>
+      </div>
+      <div class="slot">
+        <span class="time">9h–11h30</span>
+        <p class="what"><strong>Parque das Aves</strong> <a class="inline-map" href="https://maps.google.com/?cid=10573184266852450103" target="_blank" rel="noopener">↗ mapa</a>: viveiros imersivos, Casa das Borboletas, área de répteis. Passeio de ritmo leve, com bancos e sombra ao longo do caminho.</p>
+      </div>
+      <div class="slot">
+        <span class="time">12h</span>
+        <p class="what">Almoço leve (ver abaixo).</p>
+      </div>
+      <div class="slot">
+        <span class="time">Tarde</span>
+        <p class="what"><strong>Wonder Park Foz</strong> <a class="inline-map" href="https://maps.google.com/?cid=4927163297672029394" target="_blank" rel="noopener">↗ mapa</a> — parque de diversões com atrações como Movie Cars, Big Land e Show das Águas, além de área própria para os pequenos. Funciona até 22h, o grupo pode dosar o tempo conforme o ânimo de cada um.</p>
+      </div>
+    </div>
+
+    <div class="note">Reservem tempo entre o almoço e o Wonder Park — o clima de inverno em Foz costuma ser ameno de dia, mas esfria ao entardecer, então vale levar um casaco leve para as crianças.</div>
+
+    <div class="dish">
+      <span class="tag">Almoço</span>
+      <div class="body">
+        <b>Empório com Arte <a class="inline-map" href="https://maps.google.com/?cid=12357924845943582207" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Av. das Cataratas — ambiente pequeno e charmoso, opções vegetarianas/veganas e panquecas.</span>
+      </div>
+    </div>
+    <div class="dish">
+      <span class="tag">Jantar</span>
+      <div class="body">
+        <b>La Mafia Trattoria <a class="inline-map" href="https://maps.google.com/?cid=16050521780933444871" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Massas frescas em ambiente temático (inspirado em "O Poderoso Chefão"), com serviço de busca no hotel/Airbnb. Costuma ser um sucesso com as crianças.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="dia4">
+    <div class="day-marker">04</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 4 · Sexta, 31/07</div>
+      <h2>Compras em Ciudad del Este (Paraguai)</h2>
+      <p class="sub">Travessia num dia de semana, de propósito: em Ciudad del Este as lojas funcionam em horário cheio de segunda a sábado, sem a restrição do comércio de domingo.</p>
+      <span class="effort">Ritmo moderado</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">8h30</span>
+        <p class="what">Saída do Airbnb rumo à <strong>Ponte da Amizade</strong> — travessia para Ciudad del Este (levem documento de todos, inclusive das crianças).</p>
+      </div>
+      <div class="slot">
+        <span class="time">9h30–13h</span>
+        <p class="what"><strong>Compras em Ciudad del Este</strong> — com todo o comércio funcionando normalmente (lojas de rua, <strong>Shopping China</strong> <a class="inline-map" href="https://maps.google.com/?cid=4795481078235002133" target="_blank" rel="noopener">↗ mapa</a>, Shopping Paris, Cellshop, Monalisa, Nissei), o grupo pode se dividir por interesse: eletrônicos, perfumaria, moda ou decoração, sem pressa de horário de fechamento.</p>
+      </div>
+      <div class="slot">
+        <span class="time">13h</span>
+        <p class="what">Almoço em um dos shoppings — a praça de alimentação do Shopping China é ampla e prática para um grupo grande com crianças.</p>
+      </div>
+      <div class="slot">
+        <span class="time">14h30</span>
+        <p class="what">Retorno a Foz do Iguaçu, atravessando de volta a fronteira.</p>
+      </div>
+      <div class="slot">
+        <span class="time">Tarde</span>
+        <p class="what">Fim de tarde livre no Airbnb para guardar as compras e descansar antes do dia mais longo do roteiro (Cataratas argentinas, amanhã).</p>
+      </div>
+    </div>
+
+    <div class="note">De segunda a sábado as lojas costumam abrir por volta das 7h e fechar entre 15h e 16h — chegando às 9h30 dá tempo de sobra. Para a travessia, o mais prático é ir de ônibus/tour local (ex.: Loumar Turismo) ou táxi/van contratada na hora — levar o carro alugado até o Paraguai costuma esbarrar em burocracia extra de seguro e documentação. Fiquem atentos à cota de isenção de compras por pessoa ao voltar para o Brasil, e guardem os documentos à mão na travessia.</div>
+
+    <div class="dish">
+      <span class="tag">Almoço</span>
+      <div class="body">
+        <b>Praça de alimentação — Shopping China <a class="inline-map" href="https://maps.google.com/?cid=4795481078235002133" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Ampla e prática para grupo grande com crianças; resolve compras e almoço no mesmo lugar, com calma.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="dia5">
+    <div class="day-marker">05</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 5 · Sábado, 01/08</div>
+      <h2>Cataratas do Iguaçu — lado argentino</h2>
+      <p class="sub">Com um dia inteiro livre, vale a pena ver a outra metade das Cataratas: mais próxima da água, com trenzinho ecológico incluso e a Garganta do Diabo por uma passarela diferente.</p>
+      <span class="effort">Ritmo animado — dia mais longo do roteiro</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">7h30</span>
+        <p class="what">Saída cedo do Airbnb — travessia de fronteira até Puerto Iguazú (levem documento de todos, inclusive das crianças).</p>
+      </div>
+      <div class="slot">
+        <span class="time">8h30</span>
+        <p class="what">Entrada no <strong>Parque Nacional Iguazú</strong> <a class="inline-map" href="https://maps.google.com/?cid=3078447077858853026" target="_blank" rel="noopener">↗ mapa</a>. Primeira parada: <strong>Trenzinho Ecológico da Selva</strong> até a Garganta do Diabo — as crianças costumam adorar o passeio de trem.</p>
+      </div>
+      <div class="slot">
+        <span class="time">9h–10h30</span>
+        <p class="what"><strong>Garganta do Diabo</strong> — passarela até o mirante mais impressionante do parque. Chegar cedo evita as multidões do meio-dia.</p>
+      </div>
+      <div class="slot">
+        <span class="time">11h–13h</span>
+        <p class="what"><strong>Circuito Inferior</strong> — trilha mais tranquila, com vistas de baixo para as quedas, boa para o ritmo do grupo. Quem estiver mais cansado pode parar por aqui e não seguir para o Circuito Superior.</p>
+      </div>
+      <div class="slot">
+        <span class="time">13h</span>
+        <p class="what">Almoço dentro do parque (La Selva ou área de praças de alimentação perto do Centro de Visitantes).</p>
+      </div>
+      <div class="slot">
+        <span class="time">Tarde</span>
+        <p class="what">Para quem ainda tiver ânimo: <strong>Circuito Superior</strong>, com vista de cima das quedas. Os adultos mais dispostos também podem encarar o passeio de barco <strong>Gran Aventura</strong> (opcional, à parte, molha bastante — melhor sem as crianças pequenas).</p>
+      </div>
+      <div class="slot">
+        <span class="time">Fim de tarde</span>
+        <p class="what">Retorno a Foz do Iguaçu para uma noite tranquila — dia mais puxado do roteiro.</p>
+      </div>
+    </div>
+
+    <div class="note">O parque argentino abre às 8h e a venda de ingressos/acesso vai até 16h30. É um passeio com bem mais caminhada que o lado brasileiro, então este dia foi pensado com folga: parem no Circuito Inferior se o grupo já estiver satisfeito, sem obrigação de fazer tudo.</div>
+
+    <div class="dish">
+      <span class="tag">Almoço</span>
+      <div class="body">
+        <b>La Selva (dentro do parque) <a class="inline-map" href="https://maps.google.com/?cid=5899768317834095514" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Direto no Parque Nacional Iguazú, evita deslocamento extra no dia mais longo.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="dia6">
+    <div class="day-marker">06</div>
+    <div class="day-head">
+      <div class="eyebrow">Dia 6 · Domingo, 02/08</div>
+      <h2>Itaipu + Refúgio Biológico</h2>
+      <p class="sub">Último dia cheio, mas sem nada cansativo — encerra o roteiro com folga para arrumar as malas antes da madrugada de embarque.</p>
+      <span class="effort">Ritmo moderado</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">9h</span>
+        <p class="what"><strong>Tour Panorâmico da Itaipu</strong> <a class="inline-map" href="https://www.turismoitaipu.com.br/" target="_blank" rel="noopener">↗ site</a> — passeio de ônibus pela usina, sem caminhada longa, com paradas para fotos no mirante e na crista da barragem. Boa opção para todas as idades. Funciona normalmente aos domingos.</p>
+      </div>
+      <div class="slot">
+        <span class="time">12h</span>
+        <p class="what">Almoço.</p>
+      </div>
+      <div class="slot">
+        <span class="time">Tarde</span>
+        <p class="what"><strong>Refúgio Biológico Bela Vista</strong> <a class="inline-map" href="https://maps.google.com/?cid=6752509903159983657" target="_blank" rel="noopener">↗ mapa</a> (Itaipu) — trilha curta e sombreada pela mata, com viveiros de animais silvestres resgatados (onças, araras, antas). Fica pertinho da usina, dá pra emendar direto após o tour. Aberto aos domingos (fecha só às terças, para manutenção).</p>
+      </div>
+      <div class="slot">
+        <span class="time">Fim de tarde</span>
+        <p class="what">Arrumação das malas com calma — deixem tudo pronto ainda de dia, para a noite ficar livre.</p>
+      </div>
+      <div class="slot">
+        <span class="time">Noite</span>
+        <p class="what">Jantar leve e cedo perto do Airbnb — o embarque é de madrugada, então vale priorizar o sono possível desta noite.</p>
+      </div>
+    </div>
+
+    <div class="note">Existe também o Tour Especial da Itaipu, mais longo e com trecho a pé dentro da usina — dado o perfil do grupo, o panorâmico de ônibus é a opção mais confortável.</div>
+
+    <div class="dish">
+      <span class="tag">Jantar</span>
+      <div class="body">
+        <b>Quinta da Oliva <a class="inline-map" href="https://maps.google.com/?cid=1557688451181453402" target="_blank" rel="noopener">↗ mapa</a> ou Castelo Libanês <a class="inline-map" href="https://maps.google.com/?cid=15237499751832114182" target="_blank" rel="noopener">↗ mapa</a></b>
+        <span>Massas tradicionais (lasanha, nhoque, risoto) ou comida árabe farta e a preços acessíveis — se for rápido, serve bem; senão, algo mais simples perto do Airbnb também resolve.</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <section class="day" id="embarque">
+    <div class="day-marker">✈</div>
+    <div class="day-head">
+      <div class="eyebrow">Segunda, 03/08</div>
+      <h2>Embarque às 5h00</h2>
+      <p class="sub">Sem atividades — este dia é só logística de viagem.</p>
+      <span class="effort">Madrugada</span>
+    </div>
+
+    <div class="timeline">
+      <div class="slot">
+        <span class="time">~2h30–3h00</span>
+        <p class="what">Saída do Airbnb rumo ao aeroporto, considerando check-in e tempo de antecedência para um voo às 5h.</p>
+      </div>
+    </div>
+
+    <div class="note">Com embarque às 5h, praticamente não sobra noite de sono — malas prontas na tarde/noite de domingo (Dia 6) fazem toda diferença. Se possível, adiantem o jantar de domingo e já deixem tudo separado (documentos, roupa das crianças, carregadores) para a saída da madrugada ser a mais tranquila possível.</div>
+  </section>
+</div>
+
+<section class="block" id="transporte">
+  <div class="block-head">
+    <div class="eyebrow">Logística</div>
+    <h2>Carro alugado ou Uber/táxi?</h2>
+    <p>Ficando em Airbnb, com 9 pessoas e crianças pequenas, a resposta é: vale a pena alugar carro.</p>
+  </div>
+
+  <div class="transport-grid">
+    <div class="transport-card recommended">
+      <span class="pill">Recomendado</span>
+      <h3>Carro alugado (ou van)</h3>
+      <ul>
+        <li>Uber em Foz é inconsistente fora do Centro — esperas de 15–20 min e corridas canceladas são comuns, nada ideal com criança cansada ou avós esperando no sol.</li>
+        <li>9 pessoas não cabem em um carro de app comum: seriam 2–3 corridas por trajeto, encarecendo e complicando a saída de todo mundo junto.</li>
+        <li>Estacionamento tranquilo nos pontos do roteiro: pago no Parque Nacional e na Itaipu, gratuito no Marco das Três Fronteiras.</li>
+        <li>Flexibilidade real: sair mais cedo, encurtar um passeio, voltar ao Airbnb para a soneca sem depender de motorista.</li>
+      </ul>
+    </div>
+    <div class="transport-card">
+      <span class="pill">Como organizar</span>
+      <h3>Para 9 pessoas</h3>
+      <ul>
+        <li>Ideal: uma <strong>van/minivan</strong> (9–12 lugares) ou dois carros médios/SUV.</li>
+        <li>Reserve com antecedência — alta temporada esgota rápido.</li>
+        <li>Compare Localiza, Movida e Unidas, que têm boa rede na cidade.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exception">
+    <strong>Duas exceções — Dias 4 e 5:</strong> para as compras em Ciudad del Este (Dia 4) e a travessia às Cataratas argentinas (Dia 5), é mais simples ir de ônibus, táxi ou tour fechado do que com o carro alugado — a burocracia de seguro e documentação na fronteira com veículo próprio não costuma compensar para passeios de um dia. Nos outros quatro dias, todos dentro do Brasil, o carro alugado segue sendo a melhor opção.
+  </div>
+</section>
+
+<section class="block" id="restaurantes">
+  <div class="block-head">
+    <div class="eyebrow">Onde comer</div>
+    <h2>Restaurantes do roteiro</h2>
+    <p>Reservem com antecedência avisando o tamanho do grupo (9 pessoas) — em alta temporada, mesas grandes enchem rápido.</p>
+  </div>
+
+  <div class="restaurants">
+    <div class="rcard"><div class="eyebrow">Jantar · Dia 1</div><h3>Rafain Churrascaria Show</h3><p>Buffet variado + churrasco + show folclórico.</p></div>
+    <div class="rcard"><div class="eyebrow">Almoço · Dia 2</div><h3>Porto Canoas</h3><p>Dentro do Parque Nacional, vista para o rio.</p></div>
+    <div class="rcard"><div class="eyebrow">Almoço · Dia 3</div><h3>Empório com Arte</h3><p>Leve, vegetariano/vegano, panquecas.</p></div>
+    <div class="rcard"><div class="eyebrow">Jantar · Dia 3</div><h3>La Mafia Trattoria</h3><p>Massas frescas, ambiente temático.</p></div>
+    <div class="rcard"><div class="eyebrow">Almoço · Dia 4</div><h3>Praça de alimentação — Shopping China</h3><p>Ampla e prática para grupo grande com crianças, em Ciudad del Este.</p></div>
+    <div class="rcard"><div class="eyebrow">Almoço · Dia 5</div><h3>La Selva (dentro do parque)</h3><p>Direto no Parque Nacional Iguazú, evita deslocamento extra no dia mais longo.</p></div>
+    <div class="rcard"><div class="eyebrow">Jantar · Dia 6</div><h3>Quinta da Oliva</h3><p>Massas tradicionais variadas — última noite.</p></div>
+    <div class="rcard"><div class="eyebrow">Alternativa</div><h3>Castelo Libanês</h3><p>Árabe farta, preço acessível.</p></div>
+    <div class="rcard"><div class="eyebrow">Extra adultos</div><h3>Indian Lounge</h3><p>Culinária indiana, ambiente confortável.</p></div>
+  </div>
+</section>
+
+<section class="block" id="dados">
+  <div class="block-head">
+    <div class="eyebrow">Referência</div>
+    <h2>Mapa e contatos</h2>
+    <p>Base do grupo: Airbnb na R. das Papoulas, 764, Foz do Iguaçu. Todos os pontos do roteiro abaixo, com endereço e telefone para ligar ou confirmar horário antes de ir.</p>
+  </div>
+
+  <div class="map-wrap">
+    <iframe src="https://www.google.com/maps?q=-25.5622634,-54.5657395&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <p class="map-caption">Mapa centrado no <strong>Airbnb</strong> <a class="inline-map" href="https://maps.google.com/?cid=13100694403065089261" target="_blank" rel="noopener">↗ mapa</a> (R. das Papoulas, 764) — use os links "ver no mapa" nas tabelas abaixo para abrir cada ponto específico no Google Maps.</p>
+
+  <div class="datatable-wrap">
+    <table class="datatable">
+      <caption>Atrações</caption>
+      <thead>
+        <tr><th>Nome</th><th>Endereço</th><th>Telefone</th><th>Mapa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Airbnb (base do grupo)</td><td>R. das Papoulas, 764 — Bourbon, Foz do Iguaçu</td><td class="phone">—</td><td><a class="maplink" href="https://maps.google.com/?cid=13100694403065089261" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Templo Budista Chen Tien</td><td>R. Dr. Josivalter Vilanova, 99 — Porto Belo, Foz do Iguaçu</td><td class="phone">+55 45 3524-5566</td><td><a class="maplink" href="https://maps.google.com/?cid=956689821290316279" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Marco das Três Fronteiras</td><td>Ac. Três Fronteiras, Foz do Iguaçu</td><td class="phone">+55 45 3132-4104</td><td><a class="maplink" href="https://maps.google.com/?cid=7055091654915134417" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Parque Nacional do Iguaçu (BR)</td><td>Av. das Cataratas, km 22 — Foz do Iguaçu</td><td class="phone">+55 45 3521-4400</td><td><a class="maplink" href="https://maps.google.com/?cid=7954268245284137615" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Vale dos Dinossauros</td><td>Av. das Cataratas, 8100 — Foz do Iguaçu</td><td class="phone">+55 45 3527-8100</td><td><a class="maplink" href="https://maps.google.com/?cid=176960266214406754" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Parque das Aves</td><td>Av. das Cataratas, 12450 (km 17,1) — Foz do Iguaçu</td><td class="phone">+55 45 3529-8282</td><td><a class="maplink" href="https://maps.google.com/?cid=10573184266852450103" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Wonder Park Foz</td><td>Av. das Cataratas, 11547 — Foz do Iguaçu</td><td class="phone">+55 45 3132-5416</td><td><a class="maplink" href="https://maps.google.com/?cid=4927163297672029394" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Shopping China Importados</td><td>Av. Luis Maria Argaña, Ciudad del Este, Paraguai</td><td class="phone">+595 981 701701</td><td><a class="maplink" href="https://maps.google.com/?cid=4795481078235002133" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Parque Nacional Iguazú (AR)</td><td>Ruta 101, Km 142 — Puerto Iguazú, Argentina</td><td class="phone">+54 9 3757 67-4714</td><td><a class="maplink" href="https://maps.google.com/?cid=3078447077858853026" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Itaipu Binacional (Panorâmica)</td><td>Av. Tancredo Neves, 6702 — Foz do Iguaçu</td><td class="phone">0800 600 8088</td><td><a class="maplink" href="https://www.turismoitaipu.com.br/" target="_blank" rel="noopener">Site oficial →</a></td></tr>
+        <tr><td class="name">Refúgio Biológico Bela Vista</td><td>Av. Tancredo Neves, 6702-07 — Foz do Iguaçu</td><td class="phone">+55 45 3198-1800</td><td><a class="maplink" href="https://maps.google.com/?cid=6752509903159983657" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="datatable-wrap">
+    <table class="datatable">
+      <caption>Restaurantes</caption>
+      <thead>
+        <tr><th>Nome</th><th>Endereço</th><th>Telefone</th><th>Mapa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Rafain Churrascaria Show</td><td>Av. das Cataratas, 1749 — Foz do Iguaçu</td><td class="phone">+55 45 3523-1177</td><td><a class="maplink" href="https://maps.google.com/?cid=11798655624795543583" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Restaurante Porto Canoas</td><td>BR-469, km 30 — dentro do Parque Nacional</td><td class="phone">+55 45 3521-4443</td><td><a class="maplink" href="https://maps.google.com/?cid=285590153135566281" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Empório com Arte</td><td>Av. das Cataratas, 569 — Foz do Iguaçu</td><td class="phone">+55 45 3572-4240</td><td><a class="maplink" href="https://maps.google.com/?cid=12357924845943582207" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">La Mafia Trattoria</td><td>R. Watslaf Nieradka, 195 — Centro, Foz do Iguaçu</td><td class="phone">+55 45 98418-1194</td><td><a class="maplink" href="https://maps.google.com/?cid=16050521780933444871" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Quinta da Oliva</td><td>R. Estanislau Zambrzycki, 197 — Centro, Foz do Iguaçu</td><td class="phone">+55 45 3572-3131</td><td><a class="maplink" href="https://maps.google.com/?cid=1557688451181453402" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Castelo Libanês</td><td>R. Vinícius de Moraes, 520 — Monjolo, Foz do Iguaçu</td><td class="phone">+55 45 99981-8051</td><td><a class="maplink" href="https://maps.google.com/?cid=15237499751832114182" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">Indian Lounge</td><td>R. Belarmino de Mendonça, 1165 — Centro, Foz do Iguaçu</td><td class="phone">+55 45 3025-7171</td><td><a class="maplink" href="https://maps.google.com/?cid=5370529782140724054" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+        <tr><td class="name">La Selva (Parque Nac. Iguazú, AR)</td><td>Dentro do parque argentino, Puerto Iguazú</td><td class="phone">—</td><td><a class="maplink" href="https://maps.google.com/?cid=5899768317834095514" target="_blank" rel="noopener">Ver no mapa →</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">Telefones de estabelecimentos podem mudar — se algo não atender, o link "ver no mapa" também mostra o perfil atualizado do local no Google Maps.</div>
+</section>
+
+<section class="block" id="dicas">
+  <div class="block-head">
+    <div class="eyebrow">Antes de ir</div>
+    <h2>Dicas finais</h2>
+  </div>
+  <ul class="tips-list">
+    <li><b>Ingressos</b> As Cataratas (lado brasileiro) só vendem online, com data e horário marcados, em cataratasdoiguacu.com.br. Compre com 1–2 semanas de antecedência, escolhendo o horário mais cedo (8h30–9h).</li>
+    <li><b>Documentos</b> Para o Dia 4 (compras em Ciudad del Este) e o Dia 5 (Cataratas argentinas), levem RG ou passaporte de todos, inclusive das crianças, e fiquem atentos à cota de isenção de compras na volta do Paraguai.</li>
+    <li><b>Válvula de escape</b> Com os dias mais cheios, se alguém precisar de uma pausa, tudo bem ficar de fora — o grupo pode se dividir e se reencontrar depois, especialmente no Wonder Park, no Vale dos Dinossauros e no Circuito Inferior das Cataratas argentinas.</li>
+    <li><b>Refeições</b> Com crianças pequenas, vale manter o almoço mais cedo (12h–12h30) para evitar birra de fome.</li>
+    <li><b>Fotos</b> Melhor luz nas Cataratas logo na abertura; no Marco das Três Fronteiras, no fim da tarde.</li>
+    <li><b>Chuva e frio</b> Foz tem chuvas rápidas mesmo no inverno, e as noites esfriam — levem capa de chuva leve e um casaco para o fim de tarde/noite.</li>
+    <li><b>Madrugada de embarque</b> Com o voo às 5h de segunda, praticamente não há noite de sono — arrumem as malas ainda no domingo à tarde para a saída ser tranquila.</li>
+  </ul>
+</section>
+
+<footer>
+  Roteiro de 6 dias em Foz do Iguaçu <span>·</span> 28/07 a 03/08/2026 <span>·</span> 6 adultos + 3 crianças <span>·</span> Boa viagem
+</footer>
+
+</body>
+</html>
